@@ -1,0 +1,171 @@
+/* Reset ligero */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html,body { height: 100%; }
+body{
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color: #111;
+  line-height: 1.4;
+  background: #fff;
+}
+
+/* Contenedor centrado */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Header */
+.site-header {
+  background: rgba(255,255,255,0.9);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+.header-inner {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 0;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+  color: inherit;
+}
+.brand-logo {
+  width: 72px;
+  height: auto;
+  display: block;
+}
+.brand-name {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  font-size: 0.95rem;
+}
+
+/* Navegación */
+.main-nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  align-items: center;
+}
+.main-nav a {
+  text-decoration: none;
+  color: #111;
+  padding: 0.35rem 0.5rem;
+  border-radius: 6px;
+  font-weight: 500;
+}
+.main-nav a:hover { background: rgba(0,0,0,0.04); }
+
+/* Header CTA */
+.header-cta { margin-left: auto; }
+
+/* Botones */
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.55rem 0.9rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+.btn-primary {
+  background: #0b6efd;
+  color: #fff;
+  border: 1px solid #0b6efd;
+}
+.btn-primary:hover { background: #095be6; border-color: #095be6; }
+.btn-ghost {
+  background: rgba(255,255,255,0.12);
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.18);
+}
+.btn-outline {
+  background: transparent;
+  color: #0b6efd;
+  border: 1px solid rgba(11,110,253,0.14);
+}
+
+/* Hero */
+.hero {
+  --hero-img: url('https://images.unsplash.com/photo-1502673530728-f79b4cab31b1?q=80&w=2000&auto=format&fit=crop&s=placeholder');
+  background-image: var(--hero-img);
+  background-size: cover;
+  background-position: center;
+  min-height: 58vh;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+.hero-overlay {
+  width: 100%;
+  background: linear-gradient(180deg, rgba(0,0,0,0.35), rgba(0,0,0,0.45));
+  padding: 4rem 0;
+}
+.hero-content { max-width: 720px; margin-left: 1rem; }
+.hero h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.1rem;
+  margin-bottom: 0.5rem;
+}
+.lead { opacity: 0.95; margin-bottom: 1rem; }
+
+/* Secciones */
+.section { padding: 3rem 0; }
+.section.alt { background: #fafafa; }
+
+/* Cards grid */
+.grid.cards {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  margin-top: 1.25rem;
+}
+
+/* Card */
+.card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(12,20,30,0.06);
+  display: flex;
+  flex-direction: column;
+}
+.card-media {
+  height: 160px;
+  background-size: cover;
+  background-position: center;
+}
+.card-body { padding: 1rem; display: flex; flex-direction: column; gap: 0.6rem; }
+.card-title { font-weight: 700; font-size: 1.05rem; }
+.card-meta { display:flex; justify-content: space-between; align-items:center; gap: 0.5rem; }
+.badge {
+  background: #0b6efd;
+  color: #fff;
+  padding: 0.25rem 0.5rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  display:inline-block;
+}
+.badge.alt { background: #06b6a4; }
+.badge.sale { background: #ef4444; }
+.price { font-weight: 700; color: #111; }
+.card-text { color: #444; font-size: 0.95rem; }
+.card-actions { margin-top: auto; display: flex; gap: 0.6rem; }
+
+/* Footer */
+.site-footer { padding: 1.5rem 0; text-align: center; border-top: 1px solid rgba(0,0,0,0.06); }
+
+/* Responsive tweaks */
+@media (max-width: 880px) {
+  .main-nav { display: none; } /* simplificado: reemplazar con menú hamburguesa si se desea */
+  .brand-logo { width: 60px; }
+  .hero h1 { font-size: 1.6rem; }
+}

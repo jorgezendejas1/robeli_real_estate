@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="900" height="420" viewBox="0 0 900 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Logo ROBELI REAL STATE">
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  <!-- Iniciales grandes estilizadas -->
+  <text x="60" y="210" font-family="Georgia, 'Times New Roman', Times, serif" font-size="200" fill="#000" font-weight="700">RBL</text>
+  <!-- Nombre corregido debajo (según tu instrucción: "ROBELI REAL STATE") -->
+  <text x="60" y="360" font-family="Playfair Display, Georgia, serif" font-size="34" letter-spacing="8" fill="#111">ROBELI REAL STATE</text>
+</svg>

@@ -50,3 +50,11 @@ function openModal(index) {
 
 function closeModal() {
   document.getElementById("modal").style.display = "none";
+}
+
+document.getElementById("language-toggle").addEventListener("change", () => {
+  const lang = document.getElementById("language-toggle").value;
+  document.querySelectorAll("[data-es]").forEach(el => {
+    el.textContent = lang === "es" ? el.getAttribute("data-es") : el.getAttribute("data-en");
+  });
+});

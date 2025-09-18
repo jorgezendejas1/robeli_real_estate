@@ -3,40 +3,72 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Robeli Stays</title>
+  <title>ROBELI REAL ESTATE</title>
   <link rel="stylesheet" href="styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="navbar">
-    <div class="logo">Robeli Stays</div>
+    <div class="logo">ROBELI REAL ESTATE</div>
     <nav>
       <ul>
-        <li><a href="#">Explorar</a></li>
-        <li><a href="#">Ofertas</a></li>
-        <li><a href="#">Iniciar sesión</a></li>
+        <li><a href="#">Explorar / Explore</a></li>
+        <li><a href="#">Ofertas / Deals</a></li>
+        <li><a href="#">Contacto / Contact</a></li>
+        <li><select id="language-toggle">
+          <option value="es">ES</option>
+          <option value="en">EN</option>
+        </select></li>
       </ul>
     </nav>
   </header>
 
   <section class="hero">
-    <h1>Encuentra tu lugar ideal en Cancún</h1>
-    <input type="text" placeholder="¿A dónde quieres ir?" />
+    <h1 data-es="Encuentra tu lugar ideal en Cancún" data-en="Find your perfect stay in Cancún">Encuentra tu lugar ideal en Cancún</h1>
+    <div class="filters">
+      <input type="text" placeholder="Zona / Area" />
+      <input type="number" placeholder="Precio máximo / Max price" />
+      <input type="date" />
+      <input type="date" />
+    </div>
   </section>
 
   <section class="properties">
-    <div class="card">
-      <img src="img/casa1.jpg" alt="Casa en Cancún" />
+    <div class="card" onclick="openModal(0)">
+      <img src="img/casa1.jpg" alt="Casa 1" />
       <div class="info">
-        <h3>Casa moderna cerca del mar</h3>
-        <p>$1,200 MXN por noche · ⭐ 4.8 (32 reseñas)</p>
+        <h3 data-es="Casa moderna cerca del mar" data-en="Modern house near the beach">Casa moderna cerca del mar</h3>
+        <p data-es="$1,200 MXN por noche · ⭐ 4.8 (32 reseñas)" data-en="$1,200 MXN per night · ⭐ 4.8 (32 reviews)">$1,200 MXN por noche · ⭐ 4.8 (32 reseñas)</p>
       </div>
     </div>
-    <!-- Repite más cards aquí -->
+    <!-- Repite para casa2 y casa3 -->
   </section>
 
+  <section id="map"></section>
+
+  <section class="testimonials">
+    <h2 data-es="Testimonios de huéspedes" data-en="Guest Testimonials">Testimonios de huéspedes</h2>
+    <div id="testimonial-container"></div>
+  </section>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h3 id="modal-title"></h3>
+      <div class="gallery">
+        <img src="img/casa1.jpg" />
+        <img src="img/casa2.jpg" />
+        <img src="img/casa3.jpg" />
+      </div>
+      <p id="modal-description"></p>
+    </div>
+  </div>
+
   <footer>
-    <p>© 2025 Robeli Real Estate</p>
+    <p>© 2025 ROBELI REAL ESTATE · Todos los derechos reservados</p>
   </footer>
+
+  <script src="script.js"></script>
+  <script async src="https://maps.googleapis.com/maps/api/js?key=TU_API_KEY_AQUI&callback=initMap"></script>
 </body>
 </html>

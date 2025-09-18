@@ -1,140 +1,42 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>ROBELI REAL ESTATE — Inicio</title>
-
-  <!-- Fuentes -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Robeli Stays</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Header / Navegación -->
-  <header class="site-header">
-    <div class="container header-inner">
-      <!-- Logo actualizado (usa logo/logo.png) -->
-      <a class="brand" href="https://jorgezendejas1.github.io/robeli_real_estate/">
-        <img src="logo/logo.png" alt="ROBELI REAL ESTATE logo" class="brand-logo">
-        <span class="brand-name">ROBELI REAL ESTATE</span>
-      </a>
-
-      <nav class="main-nav" aria-label="Menú principal">
-        <ul>
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#alojamientos">Alojamientos</a></li>
-          <li><a href="#reservas">Reservas</a></li>
-          <li><a href="#ventas">Ventas</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-        </ul>
-      </nav>
-
-      <div class="header-cta">
-        <a class="btn btn-primary" href="#reservas">Reservar</a>
-      </div>
-    </div>
+  <header class="navbar">
+    <div class="logo">Robeli Stays</div>
+    <nav>
+      <ul>
+        <li><a href="#">Explorar</a></li>
+        <li><a href="#">Ofertas</a></li>
+        <li><a href="#">Iniciar sesión</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <!-- Hero -->
-  <section class="hero" id="home" role="region" aria-label="Hero">
-    <div class="hero-overlay">
-      <div class="container hero-content">
-        <h1>Encuentra la propiedad perfecta: Airbnb, alquiler o compra</h1>
-        <p class="lead">Propiedades cuidadosamente seleccionadas para estancias cortas, alquileres a largo plazo y ventas.</p>
-        <div class="hero-actions">
-          <a href="#alojamientos" class="btn btn-ghost">Ver alojamientos</a>
-          <a href="#reservas" class="btn btn-primary">Reservar ahora</a>
-        </div>
-      </div>
-    </div>
+  <section class="hero">
+    <h1>Encuentra tu lugar ideal en Cancún</h1>
+    <input type="text" placeholder="¿A dónde quieres ir?" />
   </section>
 
-  <!-- Sección de alojamientos -->
-  <main>
-    <section id="alojamientos" class="section container">
-      <header class="section-header">
-        <h2>Opciones de alojamiento</h2>
-        <p>Explora nuestras propiedades: estancias cortas, rentas convencionales y ventas.</p>
-      </header>
-
-      <div class="grid cards">
-        <!-- Card 1 -->
-        <article class="card">
-          <div class="card-media" style="background-image:url('https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=1200&q=80');"></div>
-          <div class="card-body">
-            <h3 class="card-title">Apartamento céntrico</h3>
-            <div class="card-meta">
-              <span class="badge">Airbnb</span>
-              <span class="price">USD 75 / noche</span>
-            </div>
-            <p class="card-text">2 hab · 1 baño · wifi · A 5 min de transporte</p>
-            <div class="card-actions">
-              <a class="btn btn-outline" href="#">Ver detalles</a>
-              <a class="btn btn-primary" href="#reservas">Reservar</a>
-            </div>
-          </div>
-        </article>
-
-        <!-- Card 2 -->
-        <article class="card">
-          <div class="card-media" style="background-image:url('https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=1200&auto=format&fit=crop&s=placeholder');"></div>
-          <div class="card-body">
-            <h3 class="card-title">Casa familiar</h3>
-            <div class="card-meta">
-              <span class="badge alt">Alquiler</span>
-              <span class="price">USD 1,200 / mes</span>
-            </div>
-            <p class="card-text">3 hab · 2 baños · jardín · estacionamiento</p>
-            <div class="card-actions">
-              <a class="btn btn-outline" href="#">Ver detalles</a>
-              <a class="btn btn-primary" href="#contacto">Contactar</a>
-            </div>
-          </div>
-        </article>
-
-        <!-- Card 3 -->
-        <article class="card">
-          <div class="card-media" style="background-image:url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop&s=placeholder');"></div>
-          <div class="card-body">
-            <h3 class="card-title">Apartamento en venta</h3>
-            <div class="card-meta">
-              <span class="badge sale">Venta</span>
-              <span class="price">USD 185,000</span>
-            </div>
-            <p class="card-text">2 hab · 2 baños · vista al mar · edificio nuevo</p>
-            <div class="card-actions">
-              <a class="btn btn-outline" href="#">Ver detalles</a>
-              <a class="btn btn-primary" href="#contacto">Solicitar visita</a>
-            </div>
-          </div>
-        </article>
+  <section class="properties">
+    <div class="card">
+      <img src="img/casa1.jpg" alt="Casa en Cancún" />
+      <div class="info">
+        <h3>Casa moderna cerca del mar</h3>
+        <p>$1,200 MXN por noche · ⭐ 4.8 (32 reseñas)</p>
       </div>
-    </section>
-
-    <!-- Ejemplo de sección de reservas/ventas para anclar botones -->
-    <section id="reservas" class="section alt container">
-      <h2>Reserva rápida</h2>
-      <p>Formulario o flujo de reservas (placeholder).</p>
-      <!-- Aquí se integraría el formulario real o widget de reservas -->
-    </section>
-
-    <section id="ventas" class="section container">
-      <h2>Ventas</h2>
-      <p>Consultas para compra y asesoría inmobiliaria.</p>
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container">
-      <p>&copy; <span id="year"></span> ROBELI REAL ESTATE — Todos los derechos reservados.</p>
     </div>
-  </footer>
+    <!-- Repite más cards aquí -->
+  </section>
 
-  <script>
-    // Año dinámico
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <footer>
+    <p>© 2025 Robeli Real Estate</p>
+  </footer>
 </body>
 </html>

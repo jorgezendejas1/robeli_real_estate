@@ -15,10 +15,12 @@
         <li><a href="#">Explorar / Explore</a></li>
         <li><a href="#">Ofertas / Deals</a></li>
         <li><a href="#">Contacto / Contact</a></li>
-        <li><select id="language-toggle">
-          <option value="es">ES</option>
-          <option value="en">EN</option>
-        </select></li>
+        <li>
+          <select id="language-toggle">
+            <option value="es">ES</option>
+            <option value="en">EN</option>
+          </select>
+        </li>
       </ul>
     </nav>
   </header>
@@ -35,13 +37,26 @@
 
   <section class="properties">
     <div class="card" onclick="openModal(0)">
-      <img src="img/casa1.jpg" alt="Casa 1" />
+      <img src="img/casa1.png" alt="Casa 1" />
       <div class="info">
         <h3 data-es="Casa moderna cerca del mar" data-en="Modern house near the beach">Casa moderna cerca del mar</h3>
         <p data-es="$1,200 MXN por noche · ⭐ 4.8 (32 reseñas)" data-en="$1,200 MXN per night · ⭐ 4.8 (32 reviews)">$1,200 MXN por noche · ⭐ 4.8 (32 reseñas)</p>
       </div>
     </div>
-    <!-- Repite para casa2 y casa3 -->
+    <div class="card" onclick="openModal(1)">
+      <img src="img/casa2.png" alt="Casa 2" />
+      <div class="info">
+        <h3 data-es="Villa con alberca privada" data-en="Villa with private pool">Villa con alberca privada</h3>
+        <p data-es="$2,500 MXN por noche · ⭐ 4.9 (18 reseñas)" data-en="$2,500 MXN per night · ⭐ 4.9 (18 reviews)">$2,500 MXN por noche · ⭐ 4.9 (18 reseñas)</p>
+      </div>
+    </div>
+    <div class="card" onclick="openModal(2)">
+      <img src="img/casa3.png" alt="Casa 3" />
+      <div class="info">
+        <h3 data-es="Departamento en el centro" data-en="Downtown apartment">Departamento en el centro</h3>
+        <p data-es="$950 MXN por noche · ⭐ 4.7 (45 reseñas)" data-en="$950 MXN per night · ⭐ 4.7 (45 reviews)">$950 MXN por noche · ⭐ 4.7 (45 reseñas)</p>
+      </div>
+    </div>
   </section>
 
   <section id="map"></section>
@@ -56,9 +71,9 @@
       <span class="close" onclick="closeModal()">&times;</span>
       <h3 id="modal-title"></h3>
       <div class="gallery">
-        <img src="img/casa1.jpg" />
-        <img src="img/casa2.jpg" />
-        <img src="img/casa3.jpg" />
+        <img src="img/casa1.png" />
+        <img src="img/casa2.png" />
+        <img src="img/casa3.png" />
       </div>
       <p id="modal-description"></p>
     </div>
